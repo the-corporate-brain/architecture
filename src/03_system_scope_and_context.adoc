@@ -38,6 +38,12 @@ Alternativ oder ergänzend können Sie eine Tabelle verwenden.
 Der Titel gibt den Namen Ihres Systems wieder; die drei Spalten sind: Kommunikationsbeziehung, Eingabe, Ausgabe.
 ****
 
+[cols="1,2,3" options="header"]
+|===
+|Kommunikationsbeziehung |Eingabe |Ausgabe
+| 1 | _Cloudnative Umsetzung (Analysierbarkeit)_ | _Die Umsetzung soll einfach cloud-nativ umgesetzt werden._
+|===
+
 **<Diagramm und/oder Tabelle>**
 
 **<optional: Erläuterung der externen fachlichen Schnittstellen>**
@@ -59,8 +65,13 @@ Insbesondere bei der Entwicklung von Infrastruktur oder Hardware sind diese tech
 Beispielsweise UML Deployment-Diagramme mit den Kanälen zu Nachbarsystemen, begleitet von einer Tabelle, die Kanäle auf Ein-/Ausgaben abbildet.
 ****
 
-**<Diagramm oder Tabelle>**
+image:03_API_Types.png["API Types"]
 
-**<optional: Erläuterung der externen technischen Schnittstellen>**
+Zum einen gibt es die User/Training API, auf welcher alle "regulären Anfragen" des Trainingfrontends im Rahmen eines Trainings behandelt werden.
 
-**<Mapping fachliche auf technische Schnittstellen>**
+Zum anderen gibt es eine API, welche die administrativen Aufgaben die im Vorfeld und während/nach dem Training anfallen behandelt (z.B. Reporting der Scores einzelner Teams/Mitarbeiter, das Anlegen von Teams/Mitarbeitern, ...). 
+
+Beide APIs werden getrennt voneinander abgebildet, weil sie von unterschiedlichen Frontends angefragt werden und unterschiedliche Sicherheitsberechtigungen benötigen.
+
+Alle API Operationen sind mindestens als REST-ähnliche Anfragen mit JSON als Serialisierungsformat und HTTP als Kommunikationsmedium umzusetzen, wenn möglich jedoch als vollständig REST konforme CRUD API. 
+Alle API Endpunkte sind in einem Swagger zu dokumentieren (folgt).

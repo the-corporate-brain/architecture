@@ -1,76 +1,53 @@
 [[section-introduction-and-goals]]
 ==	Einführung und Ziele
 
-[role="arc42help"]
-****
-Beschreibt die wesentlichen Anforderungen und treibenden Kräfte, die bei der Umsetzung der Softwarearchitektur und Entwicklung des Systems berücksichtigt werden müssen.
+Im Rahmen der Fallstudie zu Projektmanagement soll eine Lösung zur Gamification von Programmierschulungen erstellt werden. 
+Die Architektur und das entstehende System dienen als Proof of Concept. 
 
-Dazu gehören:
-
-* zugrunde liegende Geschäftsziele,
-* wesentliche Aufgabenstellungen und
-* essenzielle fachliche Anforderungen an das System sowie
-* Qualitätsziele für die Architektur und
-* relevante Stakeholder und deren Erwartungshaltung.
-****
+.Fachliche Anforderungen des Kunden (unvollständig!):
+* Plattform soll Trainings für Unternehmenskunden anbieten. Diese verfolgen folgende Ziele:
+** Ausmisten von nicht motivierten Mitarbeitern
+** Modernisierung und Optimierung 
+* Das Training soll nicht als eintöniges Seminare stattfinden
+* Das Training soll nicht via stunden-langen Web Session / Videos vermittelt werden
+* Es soll nicht alleine gelernt werden (Kooperatives Lernen)
+* Erfahrungen sollen ausgetauscht werden und Netzwerke aufgebaut werden (Networking) [physikalisch&virtuell]
+* Die Programmiersprache, welche trainiert werden soll ist nicht spezifiziert
+* Analytische Funktionen für den Kunden sollten integriert sein (Performance der eigenen Mitarbeiter)
+* Die erhobenen Daten sollen nur anonymisiert herausgegeben werden
+* Die Datenverarbeitung soll DSGVO konform erfolgen
+* Die entstehende Lösung sollte barrierefrei sein (rot/grün Blindheit, ...)
+* Die 4 Felder des Programmierens sollten abgefragt werden:
+** Code schreiben (Abfrage von Basiswissen mithilfe von Beispielen)
+** Code lesen und verstehen
+** Code Fehler finden
+** Code Fehler korrigieren
 
 === Aufgabenstellung
 
-[role="arc42help"]
-****
-.Inhalt
-Kurzbeschreibung der fachlichen Aufgabenstellung, treibenden Kräfte, Extrakt (oder Abstract) der Anforderungen.
-Verweis auf (hoffentlich vorliegende) Anforderungsdokumente (mit Versionsbezeichnungen und Ablageorten).
+“The corporate Brain” ist eine Software um Unternehmen im Bereich Programmierung zu schulen. Dies geschieht spielerisch durch ein innovatives Trainingsmodell. Dieses legt den Fokus auf gemeinsame Zielerreichung und beinhaltet zusätzlich einen “competitive Mode” in welchen Teams gegeneinander und doch miteinander Aufgaben erledigen.
 
-.Motivation
-Aus Sicht der späteren Nutzung ist die Unterstützung einer fachlichen Aufgabe oder Verbesserung der Qualität der eigentliche Beweggrund, ein neues System zu schaffen oder ein bestehendes zu modifizieren.
-
-.Form
-Kurze textuelle Beschreibung, eventuell in tabellarischer Use-Case Form.
-Sofern vorhanden, sollte die Aufgabenstellung Verweise auf die entsprechenden Anforderungsdokumente enthalten.
-
-Halten Sie diese Auszüge so knapp wie möglich und wägen Sie Lesbarkeit und Redundanzfreiheit gegeneinander ab.
-****
+Detaillierte Spezifikation => siehe Projektvorschlag
 
 === Qualitätsziele
 
-[role="arc42help"]
-****
-.Inhalt
-Die Top-3 bis Top-5 der Qualitätsziele für die Architektur, deren Erfüllung oder Einhaltung den maßgeblichen Stakeholdern besonders wichtig sind.
-Gemeint sind hier wirklich Qualitätsziele, die nicht unbedingt mit den Zielen des Projekts übereinstimmen. Beachten Sie den Unterschied.
-
-.Motivation
-Weil Qualitätsziele grundlegende Architekturentscheidungen oft maßgeblich beeinflussen, sollten Sie die für Ihre Stakeholder relevanten Qualitätsziele kennen, möglichst konkret und operationalisierbar.
-
-.Form
-Tabellarische Darstellung der Qualitätsziele mit möglichst konkreten Szenarien, geordnet nach Prioritäten.
-****
+[cols="1,2,3" options="header"]
+|===
+|Priorität |Qualitätsziel |Szenario
+| 1 | _Cloudnative Umsetzung (Analysierbarkeit)_ | _Die Umsetzung soll einfach, cloud-nativ umgesetzt werden._
+| 2 | _Sinnvolle Nutzung von Clouddiensten (Effizienz)_ | _Die zur Verfügung stehenden Dienste sollen effizient genutzt werden, um Overhead in Teilen der Implementierung zu vermeiden (z.B. Datenhaltung) und die Implementierung cloudnativ auszugestalten_
+| 3 | _Kostengünstiges Hosting (Kosteneffizienz)_ | _Die Kosten sollen gut im Vorraus abschätzbar sein_
+|===
 
 === Stakeholder
-
-[role="arc42help"]
-****
-.Inhalt
-Expliziter Überblick über die Stakeholder des Systems – über alle Personen, Rollen oder Organisationen –, die
-
-* die Architektur kennen sollten oder
-* von der Architektur überzeugt werden müssen,
-* mit der Architektur oder dem Code arbeiten (z.B. Schnittstellen nutzen),
-* die Dokumentation der Architektur für ihre eigene Arbeit benötigen,
-* Entscheidungen über das System und dessen Entwicklung treffen.
-
-.Motivation
-Sie sollten die Projektbeteiligten und -betroffenen kennen, sonst erleben Sie später im Entwicklungsprozess Überraschungen.
-Diese Stakeholder bestimmen unter anderem Umfang und Detaillierungsgrad der von Ihnen zu leistenden Arbeit und Ergebnisse.
-
-.Form
-Tabelle mit Rollen- oder Personennamen, sowie deren Erwartungshaltung bezüglich der Architektur und deren Dokumentation.
-****
 
 [cols="1,1,2" options="header"]
 |===
 |Rolle |Kontakt |Erwartungshaltung
-| _<Rolle-1>_ | _<Kontakt-1>_ | _<Erwartung-1>_
-| _<Rolle-2>_ | _<Kontakt-2>_ | _<Erwartung-2>_ 
+| _Product Owner_ | _Sebastian Ciornei_ | _Umsetzung der Product Vision in einer skalierbaren Architektur_
+| _Product Owner_ | _Oliver Groh_ | _Umsetzung der Product Vision in einer skalierbaren Architektur_
+| _Project Lead_ | _Caner Gül_ | _skalierbare, kostengünstige und effiziente Architektur_ 
+| _Developer_ | _Lukas Fruntke_ | _genaue Architekturbeschreibung_ 
+| _Developer_ | _Caner Gül_ | _detaillierte Architekturbeschreibung zur Umsetzung_ 
+| _Customer Representative_ | _Martin Spörl_ | _Umsetzung der funktionalen und nichtfunktionalen Anforderungen in eine skalierbare Architektur_ 
 |===
