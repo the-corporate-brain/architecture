@@ -1,0 +1,6 @@
+:numbered!:
+
+**Über dieses Dokument**
+
+[role="lead"]
+Dies ist ein sich konstant veränderndes Dokument. Die aktuelle Version befindet sich immer unter http://fallstudie-arc42.s3-website.eu-central-1.amazonaws.com/

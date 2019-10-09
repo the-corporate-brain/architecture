@@ -43,9 +43,11 @@ Eine mögliche (nicht aber notwendige!) Untergliederung dieses Abschnittes könn
 image:08-Crosscutting-Concepts-Structure-DE.png["Possible topics for crosscutting concepts"]
 ****
 
-=== _<Konzept 1>_
+=== _Datenpersistenz_
 
-_<Erklärung>_
+image:08_Database_Scheme.png["Datenbank Schema"]
+
+Dieses Bild zeigt das bevorzugte SQL Schema für die Applikation.
 
 === _<Konzept 2>_
 
