@@ -1,0 +1,276 @@
+---
+swagger: "2.0"
+info:
+  version: "2019-10-27T18:19:50Z"
+  title: "development-backend"
+host: "74eirokys9.execute-api.eu-central-1.amazonaws.com"
+basePath: "/development"
+schemes:
+- "https"
+paths:
+  /answer:
+    post:
+      consumes:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "backeApiGa7GY5XTUM90FX"
+        required: true
+        schema:
+          $ref: "#/definitions/backeApiGa7GY5XTUM90FX"
+      responses: {}
+      security:
+      - authorize: []
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /question:
+    post:
+      responses: {}
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /question/{id}:
+    get:
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "string"
+      responses: {}
+      security:
+      - authorize: []
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /seed:
+    get:
+      responses: {}
+      security:
+      - authorize: []
+  /task:
+    post:
+      responses: {}
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /task/{id}:
+    get:
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "string"
+      responses: {}
+      security:
+      - authorize: []
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /team:
+    post:
+      responses: {}
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /tier:
+    post:
+      responses: {}
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /unit:
+    get:
+      responses: {}
+      security:
+      - authorize: []
+    post:
+      responses: {}
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /unit/{id}:
+    get:
+      parameters:
+      - name: "id"
+        in: "path"
+        required: true
+        type: "string"
+      responses: {}
+      security:
+      - authorize: []
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+  /user:
+    post:
+      responses: {}
+    options:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+            Access-Control-Allow-Methods:
+              type: "string"
+            Access-Control-Allow-Credentials:
+              type: "string"
+            Access-Control-Allow-Headers:
+              type: "string"
+securityDefinitions:
+  authorize:
+    type: "apiKey"
+    name: "Authorization"
+    in: "header"
+    x-amazon-apigateway-authtype: "custom"
+definitions:
+  backeApiGa7GY5XTUM90FX:
+    type: "object"
+    required:
+    - "answerType"
+    - "questionId"
+    properties:
+      answerId:
+        type: "number"
+        title: "The Number of the Answer, which is handed in"
+      questionId:
+        type: "string"
+        title: "The ID of the Question"
+      answerText:
+        type: "string"
+        title: "The Text of the Answer"
+      answerType:
+        type: "string"
+        title: "The type of the answer (either text or id)."
+    title: "The Answer Submission Schema"

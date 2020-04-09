@@ -8,6 +8,7 @@
 |Kommunikationsbeziehung |Eingabe |Ausgabe
 | _Durchführung der Trainings_ | _Lösung des Nutzers via Webapp_ | _Lösung richtig (ja/nein)_
 | _Auswertung der Daten_ | _-_ | _Statistiken und Auswertungen zu Engagement, Scores, ... der Teams_
+| _Anonymisierung/Pseudonymisierung der Daten nach DSGVO_ | _-_ | _Sämtliche Daten des Nutzers nach DS-GVO löschen/pseudonymisieren_
 | _Export der Daten nach DSGVO_ | _-_ | _Sämtliche Daten des Nutzers nach DS-GVO im JSON, bzw. CSV Format_
 |===
 

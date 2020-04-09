@@ -11,6 +11,6 @@ Die Datenstrukturen werden aus der Swagger Spezifikation generiert.
 ==== Backend
 Das Backend soll als Funktion auf AWS Lambda laufen. 
 Umgesetzt wird das Backend mit Typescript und TypeORM.
-Da das Routing via API Gateway erfolgen soll, müssen die einzelnen Routen als eigenen Funktionen angelegt werden.
+Da das Routing via API Gateway erfolgen soll, müssen die einzelnen Routen als eigene Funktionen angelegt werden.
 Es sollen mehrere Funktionen für wiederverwendbare Logik entstehen, die in allen Routen-funktionen verwendet werden sollen (bspw. ORM Logik, Connection Setup, ...).
 

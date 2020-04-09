@@ -46,3 +46,5 @@ confluencePagePrefix = ''
 // added
 // extraPageContent = '<ac:structured-macro ac:name="warning"><ac:parameter ac:name="title" /><ac:rich-text-body>This is a generated page, do not edit!</ac:rich-text-body></ac:structured-macro>
 extraPageContent = ''
+
+useOpenapiMacro = true

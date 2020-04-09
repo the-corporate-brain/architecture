@@ -3,7 +3,7 @@
 //
 // ====================================
 
-= image:arc42-logo.png[arc42] Template
+= image:tcb-logo.jpeg[the corporate brain]
 // toc-title definition MUST follow document title without blank line!
 :toc-title: Inhaltsverzeichnis
 
@@ -54,30 +54,19 @@ include::src/03_system_scope_and_context.adoc[]
 // 4. Lösungsstrategie
 include::src/04_solution_strategy.adoc[]
 
-<<<<
+// <<<<
 // 5. Bausteinsicht
-include::src/05_building_block_view.adoc[]
+// include::src/05_building_block_view.adoc[]
 
 <<<<
 // 6. Laufzeitsicht
 include::src/06_runtime_view.adoc[]
 
-<<<<
+// <<<<
 // 7. Verteilungssicht
-include::src/07_deployment_view.adoc[]
+// include::src/07_deployment_view.adoc[]
 
 <<<<
 // 8. Querschnittliche Konzepte
 include::src/08_concepts.adoc[]
 
-<<<<
-// 9. Entscheidungen
-include::src/09_design_decisions.adoc[]
-
-<<<<
-// 11. Risiken
-include::src/11_technical_risks.adoc[]
-
-<<<<
-// 12. Glossar
-include::src/12_glossary.adoc[]
